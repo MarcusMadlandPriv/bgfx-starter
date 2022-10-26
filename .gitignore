@@ -48,5 +48,9 @@
 # Backup Files
 *.bak
 
+# Log Files
+*.log
+*.tlog
+
 # JSON Visual Logger files
 project/*.json
