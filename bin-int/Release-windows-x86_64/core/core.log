@@ -1,0 +1,4 @@
+﻿  app.cpp
+kernel32.lib(KERNEL32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in gdi32.lib(GDI32.dll); second definition ignored
+psapi.lib(PSAPI.DLL) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in gdi32.lib(GDI32.dll); second definition ignored
+  core.vcxproj -> C:\VisualStudioProjects\bgfx-minimal-example\bin\Release-windows-x86_64\core\core.lib

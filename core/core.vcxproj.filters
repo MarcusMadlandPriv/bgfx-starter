@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{89AF369E-F58E-B539-FEA6-40106A051C9B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\app">
+      <UniqueIdentifier>{59BDC031-C572-3927-4E67-33FEBA1B302B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\event">
+      <UniqueIdentifier>{BA0331A5-26C4-ACDB-EFFE-F5585B7EF1B7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\input">
+      <UniqueIdentifier>{683275A5-D4F2-F0DB-9D2D-3A5909AD35B8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\layer">
+      <UniqueIdentifier>{357FA4A5-A13F-20DC-6A7A-6959D6F964B8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\layer\layers">
+      <UniqueIdentifier>{745C5E1C-60EB-E7E5-090A-FCE0F577F88B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\app">
+      <UniqueIdentifier>{FDEA2FA9-69CA-AE44-72E2-391BDE4015A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\event">
+      <UniqueIdentifier>{5E2A22B5-CA94-D62B-13D3-87D17F7CB480}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\layer">
+      <UniqueIdentifier>{D9A595B5-4510-4A2C-8E4E-FBD1FAF72781}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\layer\layers">
+      <UniqueIdentifier>{9822F5D2-841B-1425-AD4D-F9A999A5F330}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\app\app.hpp">
+      <Filter>include\app</Filter>
+    </ClInclude>
+    <ClInclude Include="include\app\window.hpp">
+      <Filter>include\app</Filter>
+    </ClInclude>
+    <ClInclude Include="include\crpch.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event\app_event.hpp">
+      <Filter>include\event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event\event.hpp">
+      <Filter>include\event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event\key_event.hpp">
+      <Filter>include\event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event\mouse_event.hpp">
+      <Filter>include\event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\input\keycodes.hpp">
+      <Filter>include\input</Filter>
+    </ClInclude>
+    <ClInclude Include="include\layer\layer.hpp">
+      <Filter>include\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\layer\layer_stack.hpp">
+      <Filter>include\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\layer\layers\imgui_layer.hpp">
+      <Filter>include\layer\layers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\app\app.cpp">
+      <Filter>src\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\window.cpp">
+      <Filter>src\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crpch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\event\app_event.cpp">
+      <Filter>src\event</Filter>
+    </ClCompile>
+    <ClCompile Include="src\event\event.cpp">
+      <Filter>src\event</Filter>
+    </ClCompile>
+    <ClCompile Include="src\event\key_event.cpp">
+      <Filter>src\event</Filter>
+    </ClCompile>
+    <ClCompile Include="src\event\mouse_event.cpp">
+      <Filter>src\event</Filter>
+    </ClCompile>
+    <ClCompile Include="src\layer\layer.cpp">
+      <Filter>src\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\layer\layer_stack.cpp">
+      <Filter>src\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\layer\layers\imgui_build.cpp">
+      <Filter>src\layer\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\layer\layers\imgui_layer.cpp">
+      <Filter>src\layer\layers</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
