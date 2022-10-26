@@ -1,4 +1,0 @@
-﻿  project_layer.cpp
-C:\VisualStudioProjects\bgfx-minimal-example\project\src\project_layer.cpp(31,60): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
-     Creating library ..\bin\Debug-windows-x86_64\project\project.lib and object ..\bin\Debug-windows-x86_64\project\project.exp
-  project.vcxproj -> C:\VisualStudioProjects\bgfx-minimal-example\bin\Debug-windows-x86_64\project\project.exe
