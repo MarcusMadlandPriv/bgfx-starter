@@ -64,7 +64,7 @@ namespace Core
 		auto* window = static_cast<GLFWwindow*>(app.GetWindow().GetNativeWindow());
 
 		ImGui_ImplGlfw_InitForOther(window, true);
-		ImGui_Implbgfx_Init(0);
+		ImGui_Implbgfx_Init(255);
 	}
 
 	void ImGuiLayer::OnDetach()

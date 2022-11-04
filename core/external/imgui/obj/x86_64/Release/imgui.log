@@ -1,6 +1,1 @@
-﻿  imgui.cpp
-  imgui_demo.cpp
-  imgui_draw.cpp
-  imgui_widgets.cpp
-  Generating Code...
-  imgui.vcxproj -> C:\VisualStudioProjects\bgfx-minimal-example\core\external\imgui\bin\x86_64\Release\imgui.lib
+﻿  imgui.vcxproj -> C:\VisualStudioProjects\bgfx-starter\core\external\imgui\bin\x86_64\Release\imgui.lib

@@ -1,15 +1,1 @@
-﻿  astc_file.cc
-  codec.cc
-  endpoint_codec.cc
-  footprint.cc
-  integer_sequence_codec.cc
-  intermediate_astc_block.cc
-  logical_astc_block.cc
-  partition.cc
-  physical_astc_block.cc
-  quantization.cc
-  weight_infill.cc
-  image.cpp
-  image_gnf.cpp
-  Generating Code...
-  bimg.vcxproj -> C:\VisualStudioProjects\bgfx-minimal-example\core\external\bimg\bin\x86_64\Release\bimg.lib
+﻿  bimg.vcxproj -> C:\VisualStudioProjects\bgfx-starter\core\external\bimg\bin\x86_64\Release\bimg.lib
