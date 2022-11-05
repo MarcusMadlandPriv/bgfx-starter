@@ -5,6 +5,7 @@
 #include <bgfx/bgfx.h>
 #include <bgfx/platform.h>
 #include <imgui.h>
+#include <string>
 
 #include "project_layer.hpp"
 #include "app/app.hpp"
@@ -45,9 +46,9 @@ static const uint16_t cubeTriList[] =
 	6, 3, 7,
 };
 
-bgfx::ShaderHandle loadShader(const char* FILENAME)
+bgfx::ShaderHandle loadShader(const std::string& filename)
 {
-	FILE* file = fopen(FILENAME, "rb");
+	FILE* file = fopen(filename.c_str(), "rb");
 	if (!file)
 	{
 		std::cout << "ERROR LOADIN SHADER" << std::endl;
@@ -83,8 +84,10 @@ void ProjectLayer::OnAttach()
 	vbh = bgfx::createVertexBuffer(bgfx::makeRef(cubeVertices, sizeof(cubeVertices)), pcvLayout);
 	ibh = bgfx::createIndexBuffer(bgfx::makeRef(cubeTriList, sizeof(cubeTriList)));
 
-	bgfx::ShaderHandle vsh = loadShader("../shaders/compiled/dx11/vs_cubes.bin");
-	bgfx::ShaderHandle fsh = loadShader("../shaders/compiled/dx11/fs_cubes.bin");
+	//bgfx::ShaderHandle vsh = loadShader("../shaders/compiled/dx11/vs_cubes.bin");
+	//bgfx::ShaderHandle fsh = loadShader("../shaders/compiled/dx11/fs_cubes.bin");
+	bgfx::ShaderHandle vsh = loadShader("../shaders/simple-vert.bin");
+	bgfx::ShaderHandle fsh = loadShader("../shaders/simple-frag.bin");
 	program = bgfx::createProgram(vsh, fsh, true);
 }
 
