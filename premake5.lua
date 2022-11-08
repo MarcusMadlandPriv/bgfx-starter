@@ -94,6 +94,8 @@ project "project"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 	
+	defines "_CRT_SECURE_NO_WARNINGS"
+	
 	files 
 	{
 		path.join(PROJ_DIR, "include/**.h"),

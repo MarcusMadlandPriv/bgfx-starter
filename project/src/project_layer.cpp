@@ -84,10 +84,8 @@ void ProjectLayer::OnAttach()
 	vbh = bgfx::createVertexBuffer(bgfx::makeRef(cubeVertices, sizeof(cubeVertices)), pcvLayout);
 	ibh = bgfx::createIndexBuffer(bgfx::makeRef(cubeTriList, sizeof(cubeTriList)));
 
-	//bgfx::ShaderHandle vsh = loadShader("../shaders/compiled/dx11/vs_cubes.bin");
-	//bgfx::ShaderHandle fsh = loadShader("../shaders/compiled/dx11/fs_cubes.bin");
-	bgfx::ShaderHandle vsh = loadShader("../shaders/simple-vert.bin");
-	bgfx::ShaderHandle fsh = loadShader("../shaders/simple-frag.bin");
+	bgfx::ShaderHandle vsh = loadShader("../shaders/compiled/simple-vert.bin");
+	bgfx::ShaderHandle fsh = loadShader("../shaders/compiled/simple-frag.bin");
 	program = bgfx::createProgram(vsh, fsh, true);
 }
 
@@ -104,6 +102,11 @@ void ProjectLayer::OnEvent(Core::Event& event)
 
 void ProjectLayer::OnUpdate(const float& dt)
 {
+	#ifdef _DEBUG
+		bgfx::setDebug(BGFX_DEBUG_TEXT);
+		bgfx::dbgTextClear(0, false);
+	#endif
+
 	uint32_t width = Core::App::Instance().GetWindow().GetWidth();
 	uint32_t height = Core::App::Instance().GetWindow().GetHeight();
 	bgfx::setViewRect(0, 0, 0, width, height);
@@ -125,8 +128,9 @@ void ProjectLayer::OnUpdate(const float& dt)
 
 	bgfx::submit(0, program);
 
-	bgfx::touch(0);
+	bgfx::dbgTextPrintf(1, 1, 0x0f, "Hello World!");
 
+	bgfx::touch(0);
 	counter++;
 }
 
