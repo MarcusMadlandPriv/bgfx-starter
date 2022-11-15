@@ -1,4 +1,6 @@
 [![Windows](https://github.com/MarcusMadland/bgfx-starter/actions/workflows/msbuild.yml/badge.svg)](https://github.com/MarcusMadland/bgfx-starter/actions/workflows/msbuild.yml)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/f37aebe756b046e4a16310cd8002d19c)](https://www.codacy.com/gh/MarcusMadland/bgfx-starter/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MarcusMadland/bgfx-starter&amp;utm_campaign=Badge_Grade)
+[![Apache License 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://github.com/MarcusMadland/bgfx-starter/blob/main/LICENSE)
 
 ### Getting Started
 
